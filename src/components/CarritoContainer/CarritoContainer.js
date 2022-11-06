@@ -1,12 +1,13 @@
+import React from "react"
+import { CarritoListProductos } from '../CarritoListProductos/CarritoListProductos'
 
+export function CarritoContainer() {
 
-
-export function CarritoContainer(){
-    return(
+    return (
         <>
-        <div>
-            carrtio
-        </div>
+            <div>
+                <CarritoListProductos />
+            </div>
         </>
     )
 }

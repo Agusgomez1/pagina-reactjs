@@ -1,9 +1,6 @@
 import './Item.css'
 
-
-
-
-export function Item ({componente}){
+export function Item({ componente }) {
 
     return (
 
@@ -11,11 +8,11 @@ export function Item ({componente}){
             <div className="articleDivProductos">
                 <h3 className="articleTituloProductos">{componente.nombre} </h3>
                 <div className="articleDivFotosProductos">
-                    <img src={componente.imagen} className="articleFotosProductos"></img>
+                    <img src={componente.imagen} alt='' className="articleFotosProductos"></img>
                 </div>
                 <div className="articleDivBotonPrecio">
                     <p className="articlePrecio">precio</p>
-                    <p className="articlePrecio">{componente.precio} </p>
+                    <p className="articlePrecio">${componente.precio} </p>
                 </div>
             </div>
         </>
